@@ -1,7 +1,4 @@
-# app.py-ன் ஆரம்பத்தில் இந்த Route-ஐச் சேர்க்கவும்
-@app.route('/')
-def home():
-    return render_template('index.html')
+
 import os
 import smtplib
 from flask import Flask, request
@@ -12,6 +9,10 @@ from email.message import EmailMessage
 import io
 
 app = Flask(__name__)
+# app.py-ன் ஆரம்பத்தில் இந்த Route-ஐச் சேர்க்கவும்
+@app.route('/')
+def home():
+    return render_template('index.html')
 
 EMAIL_ADDRESS = "support@lic2.in"
 EMAIL_PASSWORD = "lic123" # கவனிக்க: உங்கள் App Password-ஐ இங்கே இடவும்
